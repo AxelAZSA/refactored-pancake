@@ -1,4 +1,14 @@
 ﻿@{
     ViewBag.Title = "Test 3";
 }
+
+
 <h2>@ViewBag.Title.</h2>
+
+<h1>Codigo</h1>
+<h2> Margin: @ViewBag.Margin</h2>
+
+    <form action="@Url.Action("postCode", "Home")" method="post">
+        <input type="text" name="code" >
+        <input type="submit" value="Submit">
+    </form>

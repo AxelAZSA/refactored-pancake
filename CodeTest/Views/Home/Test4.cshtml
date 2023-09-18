@@ -21,7 +21,7 @@
             <th scope="row">@q.ContractService.ServiceCode</th>
             <td>@q.adultNetRate</td>
             <td>@q.adultRate</td>
-            <td>@( (1 - (q.adultNetRate / q.adultRate)) * 100)</td>
+            <td>@ViewBag.Margin</td>
          </tr>
       }
    </tbody>
